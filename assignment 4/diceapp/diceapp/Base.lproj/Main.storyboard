@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="diceapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="QKi-RW-eWv">
+                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="bhA-Ic-hOX">
+                                <rect key="frame" x="258.66666666666669" y="131.66666666666666" width="335.00000000000006" height="129.99999999999997"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="JrO-YA-cVs">
+                                        <rect key="frame" x="0.0" y="0.0" width="141" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="141" id="OLO-yP-7YR"/>
+                                            <constraint firstAttribute="height" constant="130" id="lUS-Pd-da1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice2" translatesAutoresizingMaskIntoConstraints="NO" id="wGK-Sd-ZeL">
+                                        <rect key="frame" x="194" y="0.0" width="141" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="141" id="JVm-tp-pSo"/>
+                                            <constraint firstAttribute="height" constant="130" id="yI6-U2-GpF"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="GY1-CD-bo1"/>
+                                    <constraint firstAttribute="width" constant="335" id="Rlh-Ot-8d6"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKJ-de-E9E">
+                                <rect key="frame" x="89" y="292" width="674" height="50"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cH3-tl-dHv"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play"/>
+                                <connections>
+                                    <action selector="player:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddn-Ec-d3j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hKJ-de-E9E" secondAttribute="bottom" constant="30" id="G8m-1v-0RL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hKJ-de-E9E" secondAttribute="trailing" constant="30" id="J39-Rh-IJA"/>
+                            <constraint firstItem="QKi-RW-eWv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ue6-aX-cyo"/>
+                            <constraint firstAttribute="bottom" secondItem="QKi-RW-eWv" secondAttribute="bottom" id="XeV-mF-3lL"/>
+                            <constraint firstAttribute="trailing" secondItem="QKi-RW-eWv" secondAttribute="trailing" id="dF1-sW-vbO"/>
+                            <constraint firstItem="bhA-Ic-hOX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iBs-0J-QHO"/>
+                            <constraint firstItem="bhA-Ic-hOX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oNa-2A-cRm"/>
+                            <constraint firstItem="hKJ-de-E9E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="plY-q8-QVI"/>
+                            <constraint firstItem="QKi-RW-eWv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="x6Z-ss-wmm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lhsDice" destination="JrO-YA-cVs" id="Ts7-12-v76"/>
+                        <outlet property="rhsDice" destination="wGK-Sd-ZeL" id="5oe-zm-UWu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GreenBackground" width="444.66665649414062" height="414.33334350585938"/>
+        <image name="dice1" width="100" height="100"/>
+        <image name="dice2" width="100" height="100"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
