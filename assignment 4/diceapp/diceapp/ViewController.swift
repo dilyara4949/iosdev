@@ -7,8 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+import AVFoundation
 
+class ViewController: UIViewController {
+    
+    var msPlayer: AVAudioPlayer!
+
+    @IBOutlet weak var Woner: UILabel!
     @IBOutlet weak var lhsDice: UIImageView!
     @IBOutlet weak var rhsDice: UIImageView!
     
@@ -17,6 +22,16 @@ class ViewController: UIViewController {
         let idxR = Int.random(in: 0...5)
         lhsDice.image = dices[idxL]
         rhsDice.image = dices[idxR]
+        
+        if idxL == idxR {
+            guard let  url = Bundle.main.url(forResource: "sound", withExtension: "mp3") else {
+                return
+            }
+            msPlayer = try! AVAudioPlayer(contentsOf: url)
+            msPlayer.play()
+            Woner.text = "You won!"
+            
+        }
         
         
     }

@@ -34,7 +34,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select egg type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEK-3B-zIt">
-                                <rect key="frame" x="86.333333333333329" y="144" width="220.66666666666669" height="37"/>
+                                <rect key="frame" x="86.333333333333314" y="144" width="220.66666666666669" height="37"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -107,7 +107,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="EggImage" destination="zrm-DV-JAX" id="K5O-qQ-Xbs"/>
                         <outlet property="ProgressBar" destination="xZJ-bd-7ue" id="ajf-aS-kIz"/>
                         <outlet property="ProgressTime" destination="T61-Jq-G57" id="X5f-oU-EYa"/>
                         <outlet property="TopLabel" destination="lEK-3B-zIt" id="aDm-Vl-cfp"/>
